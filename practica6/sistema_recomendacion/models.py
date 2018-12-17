@@ -1,5 +1,4 @@
 from django.db import models
-from django_mysql.models import EnumField
 from django.core.validators import MaxValueValidator, MinValueValidator
 from datetime import datetime
 from django.core.exceptions import ValidationError
@@ -7,7 +6,7 @@ from django.core.exceptions import ValidationError
 # Create your models here.
 class Usuario(models.Model):
     Id = models.CharField(max_length=100, unique=True,primary_key=True)
-    Sexo=EnumField(choices=['M','F'])
+    Sexo=models.CharField(max_length=2)
     Ocupacion=models.CharField(max_length=50)
     CodigoPostal=models.IntegerField(max_length=7)
 

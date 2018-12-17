@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'diario_app.apps.SistemaRecomendacionConfig',
+    'sistema_recomendacion.apps.SistemaRecomendacionConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
