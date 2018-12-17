@@ -8,7 +8,7 @@ class Usuario(models.Model):
     Id = models.CharField(max_length=100, unique=True,primary_key=True)
     Sexo=models.CharField(max_length=2)
     Ocupacion=models.CharField(max_length=50)
-    CodigoPostal=models.IntegerField(max_length=7)
+    CodigoPostal=models.IntegerField()
 
 class Pelicula(models.Model):
     Id = models.CharField(max_length=100, unique=True, primary_key=True)
